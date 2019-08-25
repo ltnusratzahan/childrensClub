@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+
+  <div class="topnav">
+    <img src="pic/logo.jpg" height="100" width="150">
+    <input type="text" name="searchbox">
+    <input type="submit" name="search" value="search">
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">about</a>
+    <a href="blog.html">blog</a>
+  </div><br>
+
+<div class="header">
+  <h2>Children's Care Blog</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Mental Growth of Children</h2>
+      <h5>Title description, aug 14, 2019</h5>
+      <div style="height:300px;"><img src="pic/blog1.jpg" width="500px"></div>
+      <p>
+      When parents hold their newborn infants, they naturally want what’s best for them. They want to protect them, nurture them, and give them all the opportunities to have a happy life. At the same time, however, children must learn to cope with frustrations and disappointments.
+
+Luckily, there are frustrations from the very beginning of life, such as when babies want a bottle and have to wait even a few minutes while you are preparing it. Later, as toddlers, they have to wait until they can get to the bathroom or they may need to adjust to sharing you with a newborn sibling.
+
+Learning to manage and overcome frustrations builds resilience—but it can be hard for parents to stand back and let children cope on their own. In our book, Raising Independent, Self-Confident Kids, we outline strategies for surviving tears or tantrums when you have to say “not yet” or “no,” while still being supportive and nurturing. Here are five of them.</p>
+    </div>
+    <div class="card">
+      <h2>Tips for Parents</h2>
+      <h5>Title description, aug 13, 2019</h5>
+      <div style="height:300px;"><img src="pic/blog2.jpg" width="500px"></div>
+      <p>10 Good Parenting Tips
+        By Parenting For Brain Updated 07/18/2019
+
+        Parenting is not easy.
+
+        Good parenting is hard work.
+
+        How To Be A Good Parent?
+        Good parenting tips - mother lovingly kisses baby
+        What makes a good parent?
+
+        A good parent strives to make decisions in the best interest of the child.
+
+        A good parent doesn’t have to be perfect. No one is perfect.
+
+        No parent is perfect.
+
+        No child is perfect either … keeping this in mind is important when we set our expectations.
+
+        But it doesn’t mean that we shouldn’t work towards that goal.
+
+        Set high standards for ourselves first and then our children second. We serve as a role model to them.
+
+        Here are 10 tips on learning effective parenting skills.
+
+        Many of them are not quick nor easy. And probably no one can do all of them all of the time.
+      </p>
+    </div>
+  </div>
+  
+  </div>
+</div>
+
+
+</body>
+</html>
